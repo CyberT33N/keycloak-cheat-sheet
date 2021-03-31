@@ -118,7 +118,7 @@ ____________________________________________
 
 
 
-<br><br>
+<br><br><br><br>
 
 
 
@@ -137,3 +137,42 @@ ____________________________________________
 
       - Switch between managing the master realm and the realm you just created by clicking entries in the Select realm drop-down list.
 
+
+
+
+
+
+
+<br><br><br><br>
+
+
+
+## Creating a user
+- From the menu, click Users to open the user list page.
+
+  - On the right side of the empty user list, click Add User to open the Add user page.
+
+    - Enter a name in the Username field.
+
+      - This is the only required field.
+
+        - Add user page
+        
+          - Creating a user
+          
+          ![Test Image 4](https://www.keycloak.org/docs/latest/getting_started/images/add-user.png)
+          
+            - Flip the Email Verified switch to On and click Save.
+
+              - The management page for the new user opens.
+
+                - Click the Credentials tab to set a temporary password for the new user.
+
+                  - Type a new password and confirm it.
+
+                    - Click Set Password to set the user password to the new one you specified.
+
+                    ![Test Image 4](https://www.keycloak.org/docs/latest/getting_started/images/user-credentials.png)
+
+
+          

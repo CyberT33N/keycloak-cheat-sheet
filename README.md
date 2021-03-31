@@ -367,3 +367,33 @@ ____________________________________________
   
   ![Test Image 4](https://www.keycloak.org/docs/latest/server_admin/keycloak-images/role.png)
 
+
+
+
+
+
+
+
+<br><br><br><br>
+
+## Client Roles
+- Client roles are basically a namespace dedicated to a client. Each client gets its own namespace. Client roles are managed under the Roles tab under each individual client. You interact with this UI the same way you do for realm-level roles.
+
+
+
+
+
+
+
+<br><br><br><br>
+
+## Composite Roles
+- Any realm or client level role can be turned into a composite role. A composite role is a role that has one or more additional roles associated with it. When a composite role is mapped to the user, the user also gains the roles associated with that composite. This inheritance is recursive so any composite of composites also gets inherited.
+
+<br><br>
+
+To turn a regular role into a composite role, go to the role detail page and flip the Composite Role switch on.
+
+![Test Image 4](https://www.keycloak.org/docs/latest/server_admin/keycloak-images/composite-role.png)
+
+

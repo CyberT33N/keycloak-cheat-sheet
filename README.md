@@ -133,6 +133,14 @@ ____________________________________________
 
       - Click Create.
 
+
+
+<br><br>
+____________________________________________
+____________________________________________
+<br><br>
+
+
     ![Test Image 4](https://www.keycloak.org/docs/latest/getting_started/images/demo-realm.png)
 
       - Switch between managing the master realm and the realm you just created by clicking entries in the Select realm drop-down list.
@@ -153,6 +161,14 @@ ____________________________________________
   - On the right side of the empty user list, click Add User to open the Add user page.
 
     - Enter a name in the Username field.
+
+
+
+<br><br>
+____________________________________________
+____________________________________________
+<br><br>
+
 
       - This is the only required field.
 
@@ -175,4 +191,109 @@ ____________________________________________
                     ![Test Image 4](https://www.keycloak.org/docs/latest/getting_started/images/user-credentials.png)
 
 
+
+
+
+
           
+
+
+
+
+
+<br><br><br><br>
+
+## Logging into the Account Console
+
+- Every user in a realm has access to the account console. You use this console to update your profile information and change your credentials. You can now test logging in with that user in the realm that you created.
+
+  - Log out of the admin console by opening the user menu and selecting Sign Out.
+
+    - Go to http://localhost:8080/auth/realms/demo/account and log in to your demo realm as the user that you just created.
+
+      - When you are asked to supply a new password, enter a password that you can remember.
+
+      ![Test Image 4](https://www.keycloak.org/docs/latest/getting_started/images/update-password.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+____________________________________________
+____________________________________________
+<br><br>
+
+
+# Securing a sample application (https://www.keycloak.org/docs/latest/getting_started/index.html#securing-a-sample-application)
+- Now that you have an admin account, a realm, and a user, you can use Keycloak to secure a sample WildFly servlet application. You install a WildFly client adapter, register the application in the admin console, modify the WildFly instance to work with Keycloak, and use Keycloak with some sample code to secure the application.
+
+  <br><br>
+  - Prerequisites
+    - You need to adjust the port used by Keycloak to avoid port conflicts with WildFly.
+
+
+
+
+

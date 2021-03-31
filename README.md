@@ -297,3 +297,73 @@ ____________________________________________
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+____________________________________________
+____________________________________________
+<br><br>
+
+
+
+# Roles
+- Roles identify a type or category of user. Admin, user, manager, and employee are all typical roles that may exist in an organization. Applications often assign access and permissions to specific roles rather than individual users as dealing with users can be too fine grained and hard to manage. For example, the Admin Console has specific roles which give permission to users to access parts of the Admin Console UI and perform certain actions. There is a global namespace for roles and each client also has its own dedicated namespace where roles can be defined.
+
+
+<br><br>
+
+## Realm Roles
+- Realm-level roles are a global namespace to define your roles. You can see the list of built-in and created roles by clicking the Roles left menu item.
+
+![Test Image 4](https://www.keycloak.org/docs/latest/server_admin/keycloak-images/roles.png)
+
+  <br><br>
+  - To create a role, click Add Role on this page, enter in the name and description of the role, and click Save.
+  
+  ![Test Image 4](https://www.keycloak.org/docs/latest/server_admin/keycloak-images/role.png)
+

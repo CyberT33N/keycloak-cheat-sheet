@@ -133,7 +133,7 @@ ____________________________________________
 
       - Click Create.
 
-      ![Test Image 4](https://www.keycloak.org/docs/latest/getting_started/images/demo-realm.png)
+    ![Test Image 4](https://www.keycloak.org/docs/latest/getting_started/images/demo-realm.png)
 
-        - Switch between managing the master realm and the realm you just created by clicking entries in the Select realm drop-down list.
+      - Switch between managing the master realm and the realm you just created by clicking entries in the Select realm drop-down list.
 

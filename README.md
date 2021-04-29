@@ -170,25 +170,25 @@ ____________________________________________
 <br><br>
 
 
-      - This is the only required field.
+- This is the only required field.
 
-        - Add user page
-        
-          - Creating a user
-          
-          ![Test Image 4](https://www.keycloak.org/docs/latest/getting_started/images/add-user.png)
-          
-            - Flip the Email Verified switch to On and click Save.
+  - Add user page
 
-              - The management page for the new user opens.
+    - Creating a user
 
-                - Click the Credentials tab to set a temporary password for the new user.
+    ![Test Image 4](https://www.keycloak.org/docs/latest/getting_started/images/add-user.png)
 
-                  - Type a new password and confirm it.
+      - Flip the Email Verified switch to On and click Save.
 
-                    - Click Set Password to set the user password to the new one you specified.
+        - The management page for the new user opens.
 
-                    ![Test Image 4](https://www.keycloak.org/docs/latest/getting_started/images/user-credentials.png)
+          - Click the Credentials tab to set a temporary password for the new user.
+
+            - Type a new password and confirm it.
+
+              - Click Set Password to set the user password to the new one you specified.
+
+              ![Test Image 4](https://www.keycloak.org/docs/latest/getting_started/images/user-credentials.png)
 
 
 

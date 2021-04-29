@@ -4,8 +4,49 @@ Keycloak Cheat Sheet with the most needed stuff..
 
 
 
+<br><br>
+
+# Docs
+- keycloak.org/docs
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+____________________________________________
+____________________________________________
+<br><br>
 
 
 
@@ -106,7 +147,11 @@ ____________________________________________
 <br><br>
 
 
-# Realm and a user
+# Realm
+- Realms will handle multiple clients. It is a parent section of clients
+
+<br><br>
+
 - When you log in to the admin console, you work in a realm, which is a space where you manage objects. Two types of realms exist:
 
   - Master realm - This realm was created for you when you first started Keycloak. It contains the admin account you created at the first login. You use this realm only to create other realms.
@@ -136,9 +181,6 @@ ____________________________________________
 
 
 <br><br>
-____________________________________________
-____________________________________________
-<br><br>
 
 
 ![Test Image 4](https://www.keycloak.org/docs/latest/getting_started/images/demo-realm.png)
@@ -153,6 +195,69 @@ ____________________________________________
 
 <br><br><br><br>
 
+## Tokens
+- Settings for your Tokens
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+____________________________________________
+____________________________________________
+<br><br>
+
+
+# User
+
+- Will be only created inside of a realm
+
+<br><br>
+
 
 
 ## Creating a user
@@ -165,8 +270,7 @@ ____________________________________________
 
 
 <br><br>
-____________________________________________
-____________________________________________
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 <br><br>
 
 
@@ -226,6 +330,220 @@ ____________________________________________
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+____________________________________________
+____________________________________________
+<br><br>
+
+
+# Clients
+
+- Will handle your applications with domains
+
+- You can use /auth on each application to sign-in
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+____________________________________________
+____________________________________________
+<br><br>
+
+
+
+# Roles
+- Roles identify a type or category of user. Admin, user, manager, and employee are all typical roles that may exist in an organization. Applications often assign access and permissions to specific roles rather than individual users as dealing with users can be too fine grained and hard to manage. For example, the Admin Console has specific roles which give permission to users to access parts of the Admin Console UI and perform certain actions. There is a global namespace for roles and each client also has its own dedicated namespace where roles can be defined.
+
+
+<br><br>
+
+## Realm Roles
+- Realm-level roles are a global namespace to define your roles. You can see the list of built-in and created roles by clicking the Roles left menu item.
+
+![Test Image 4](https://www.keycloak.org/docs/latest/server_admin/keycloak-images/roles.png)
+
+  <br><br>
+  - To create a role, click Add Role on this page, enter in the name and description of the role, and click Save.
+  
+  ![Test Image 4](https://www.keycloak.org/docs/latest/server_admin/keycloak-images/role.png)
+
+
+
+
+
+
+
+
+<br><br><br><br>
+
+## Client Roles
+- Client roles are basically a namespace dedicated to a client. Each client gets its own namespace. Client roles are managed under the Roles tab under each individual client. You interact with this UI the same way you do for realm-level roles.
+
+
+
+
+
+
+
+<br><br><br><br>
+
+## Composite Roles
+- Any realm or client level role can be turned into a composite role. A composite role is a role that has one or more additional roles associated with it. When a composite role is mapped to the user, the user also gains the roles associated with that composite. This inheritance is recursive so any composite of composites also gets inherited.
+
+<br><br>
+
+To turn a regular role into a composite role, go to the role detail page and flip the Composite Role switch on.
+
+![Test Image 4](https://www.keycloak.org/docs/latest/server_admin/keycloak-images/composite-role.png)
 
 
 
@@ -341,59 +659,18 @@ ____________________________________________
 
 
 
-
-
-
 <br><br>
 ____________________________________________
 ____________________________________________
 <br><br>
 
-
-
-# Roles
-- Roles identify a type or category of user. Admin, user, manager, and employee are all typical roles that may exist in an organization. Applications often assign access and permissions to specific roles rather than individual users as dealing with users can be too fine grained and hard to manage. For example, the Admin Console has specific roles which give permission to users to access parts of the Admin Console UI and perform certain actions. There is a global namespace for roles and each client also has its own dedicated namespace where roles can be defined.
-
+# Gatekeeper
+- Dynamic adapter thats work together with Keycloak. Or in other words a middleware
 
 <br><br>
 
-## Realm Roles
-- Realm-level roles are a global namespace to define your roles. You can see the list of built-in and created roles by clicking the Roles left menu item.
 
-![Test Image 4](https://www.keycloak.org/docs/latest/server_admin/keycloak-images/roles.png)
-
-  <br><br>
-  - To create a role, click Add Role on this page, enter in the name and description of the role, and click Save.
-  
-  ![Test Image 4](https://www.keycloak.org/docs/latest/server_admin/keycloak-images/role.png)
-
-
-
-
-
-
-
-
-<br><br><br><br>
-
-## Client Roles
-- Client roles are basically a namespace dedicated to a client. Each client gets its own namespace. Client roles are managed under the Roles tab under each individual client. You interact with this UI the same way you do for realm-level roles.
-
-
-
-
-
-
-
-<br><br><br><br>
-
-## Composite Roles
-- Any realm or client level role can be turned into a composite role. A composite role is a role that has one or more additional roles associated with it. When a composite role is mapped to the user, the user also gains the roles associated with that composite. This inheritance is recursive so any composite of composites also gets inherited.
-
-<br><br>
-
-To turn a regular role into a composite role, go to the role detail page and flip the Composite Role switch on.
-
-![Test Image 4](https://www.keycloak.org/docs/latest/server_admin/keycloak-images/composite-role.png)
+## DOCS
+- https://www.keycloak.org/docs/latest/securing_apps/#_keycloak_generic_adapter
 
 

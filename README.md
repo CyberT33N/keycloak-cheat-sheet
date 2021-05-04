@@ -536,7 +536,7 @@ ____________________________________________
 
 <br><br><br><br>
 
-## Composite Roles
+## Composite Roles (https://www.keycloak.org/docs/6.0/server_admin/#_composite-roles)
 - Any realm or client level role can be turned into a composite role. A composite role is a role that has one or more additional roles associated with it. When a composite role is mapped to the user, the user also gains the roles associated with that composite. This inheritance is recursive so any composite of composites also gets inherited.
 
 <br><br>

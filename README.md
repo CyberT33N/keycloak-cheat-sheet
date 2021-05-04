@@ -716,3 +716,22 @@ ____________________________________________
 - https://www.keycloak.org/docs/latest/securing_apps/#_keycloak_generic_adapter
 
 
+
+
+<br><br>
+
+
+## Params
+```yml
+# require-any-role - All listed roles will gain access.
+- uri: /api/v1/data/*
+  methods: [ POST ]
+  roles: [ editCcs, deleteCcs ]
+  require-any-role: true
+  groups: [ /$(group.name) ]
+```
+
+
+
+
+

@@ -593,6 +593,48 @@ To turn a regular role into a composite role, go to the role detail page and fli
 
 
 
+<br><br>
+____________________________________________
+____________________________________________
+<br><br>
+
+
+# Authentication (https://www.keycloak.org/docs/6.0/server_admin/#authentication)
+- There are a few features you should be aware of when configuring authentication for your realm. Many organizations have strict password and OTP policies that you can enforce via settings in the Admin Console. You may or may not want to require different credential types for authentication. You may want to give users the option to login via Kerberos or disable or enable various built-in credential types. This chapter covers all of these topics.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
